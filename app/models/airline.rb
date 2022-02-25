@@ -12,7 +12,5 @@ class Airline < ApplicationRecord
     reviews.average(:score).round(2).to_f
   end
 
-  def private
-  end
 
 end
