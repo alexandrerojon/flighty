@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+# Destroy all instances of Airlines and Reviews right prior to re-creating new models
+Airline.destroy_all
+Review.destroy_all
+
 
 #Airlines
 airlines = Airline.create([

@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 
   root "pages#index"
 
-  namesspace :api do
-    namesspace :v1 do
+  namespace :api do
+    namespace :v1 do
       resources :airlines, params: :slug
       resources :reviews, only: [:create, :destroy]
     end
